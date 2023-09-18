@@ -1,21 +1,16 @@
-#include “main.h”
+#include "main.h"
 
 /**
 *_strlen - returns length of a string
-*@s: input
-*(*s != ‘\0’ ): char iteration
-* len: string array counter
+*@s: string
 * Return: length
 */
 
 int _strlen(char *s)
 {
-	int len = 0;
+	int length = 0;
 
-	while (*s != ‘\0’ )
-	{
-		s++;
-		len++;
-	}
-	return (len);
+	while (*s++)
+	length++;
+	return (length);
 }

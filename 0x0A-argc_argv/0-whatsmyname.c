@@ -2,18 +2,21 @@
 #include <stdio.h>
 
 /**
- * main - function returning an integer.
+ * main - prints the program name.
  * @argv: refers to an array of string.
  * @argc: contains number of arguments
  * passed through program.
  * Return: Always 0 (Success).
  */
 
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char *argv[])
+
 {
-	if (argc < 0)
-	{
-		printf("my name is: %s\n", argv[0]);
-	}
+
+	printf("%s\n", *argv);
+
+
+
 	return (0);
+
 }
